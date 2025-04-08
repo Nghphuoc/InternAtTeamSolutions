@@ -9,6 +9,10 @@ public class MutableObject {
         this.height = height;
     }
 
+    public MutableObject(){
+
+    }
+
     public String getName() {
         return name;
     }
@@ -31,5 +35,14 @@ public class MutableObject {
 
     public void setHeight(float height) {
         this.height = height;
+    }
+
+    @Override
+    public String toString() {
+        return "MutableObject{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", height=" + height +
+                '}';
     }
 }
